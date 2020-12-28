@@ -1,10 +1,10 @@
 from configparser import ConfigParser
 import lyricsgenius
 
-cfg = ConfigParser()
-cfg.read('narv.cfg')
+creds = ConfigParser()
+creds.read('creds.cfg')
 
-genius = lyricsgenius.Genius(cfg['CREDENTIALS']['client_access_token'])
+genius = lyricsgenius.Genius(creds['GENIUS']['client_access_token'])
 
 artists = [
     "Sipelga 14",
