@@ -46,6 +46,6 @@ print(all_artists)
 print(related_artists)
 print(len(all_artists))
 print(len(related_artists))
-with open('artists.bin', 'wb') as af, open('related.bin', 'wb') as rf:
+with open('artists/artists.bin', 'wb') as af, open('artists/related.bin', 'wb') as rf:
     pickle.dump(all_artists, af)
     pickle.dump(related_artists, rf)
