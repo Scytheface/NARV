@@ -109,5 +109,5 @@ for artist in artists:
 print()
 print(song_counter)
 
-with open("tulemus.py", "w", encoding="UTF8") as f:
+with open("../../tulemus.py", "w", encoding="UTF8") as f:
     f.write("sisu = " + str(lyrics))
