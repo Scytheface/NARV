@@ -13,8 +13,7 @@ def get_artist_lyrics(artist, featuring=False, token=None):
         genius = lyricsgenius.Genius(token, verbose=False)
     artist = artist.lower()
     artist_id = None
-    search = genius.search_all(artist)
-    for item in search['sections']:
+    for item in genius.search_all(artist)['sections']:
         if item['type'] == 'artist':
             for sub_item in item['hits']:
                 if sub_item['result']['name'].lower() == artist:
