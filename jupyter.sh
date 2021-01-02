@@ -3,7 +3,7 @@
 #SBATCH --partition gpu
 #SBATCH --time 12:00:00
 #SBATCH --mem 10000
-#SBATCH --gres=gpu:tesla:2
+#SBATCH --gres=gpu:tesla:1
 
 source ./.venv/bin/activate
 
